@@ -3,23 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victor Arboleda</title>
+  <title>ZAPATOS | Diseño que se mueve contigo</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
-    <h1>Bienvenido a Victor Arboleda</h1>
-    <p>Landing page de ejemplo.</p>
-    <a href="#contacto" class="cta-button">Contáctanos</a>
+    <h1>ZAPATOS QUE NO PIDEN PERMISO</h1>
+    <p>Diseñados para caminar, correr y vivir sin concesiones. Comodidad brutal. Estilo honesto.</p>
+    <a href="#comprar" class="cta">Comprar ahora</a>
   </header>
 
-  <section id="about">
-    <h2>Sobre Nosotros</h2>
-    <p>Breve descripción del servicio o producto ofrecido.</p>
+  <section class="section">
+    <div class="features">
+      <article class="feature">
+        <h3>Comodidad real</h3>
+        <p>Plantillas ergonómicas pensadas para usarse todo el día, no solo verse bien en fotos.</p>
+      </article>
+      <article class="feature">
+        <h3>Materiales premium</h3>
+        <p>Cuero y textiles resistentes, seleccionados por durabilidad, no por marketing.</p>
+      </article>
+      <article class="feature">
+        <h3>Diseño funcional</h3>
+        <p>Minimalismo con intención. Cada costura tiene una razón de existir.</p>
+      </article>
+    </div>
   </section>
 
-  <footer id="contacto">
-    <p>Escríbenos a <a href="mailto:info@example.com">info@example.com</a></p>
+  <section class="section product">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Zapatos modernos" />
+    <div>
+      <h2>Un par. Todas tus batallas.</h2>
+      <p>Estos zapatos no prometen cambiar tu vida. Prometen acompañarte mientras tú la cambias.</p>
+      <a id="comprar" href="#contacto" class="cta">Elegir mi par</a>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <h2 class="contact-title">Déjanos tus datos</h2>
+    <p class="contact-subtitle">No spam. Solo contacto cuando tenga sentido. Si no, no.</p>
+    <form class="contact-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+      </div>
+      <button type="submit" class="cta cta-block">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Marca de Zapatos. Hecho para gente que camina en serio.</p>
   </footer>
 </body>
 </html>
